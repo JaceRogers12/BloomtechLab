@@ -13,7 +13,7 @@
     display:flex;
     text-align: center;
     width: 100%;
-    height: 20vh;
+    height: auto;
     margin-bottom: 10%;
 }
 
@@ -33,6 +33,7 @@
     font-size: 3rem;
     color: @white;
     font-family: 'moneta';
+    margin-bottom: 1%;
 }
 
 .header-text-container h3 {
@@ -41,15 +42,32 @@
     font-size: 1.2rem;
 }
 
-// .graphs-section {
-//  ADD THIS BACK IN WHEN YOU HAVE THE GRAPHS SECTION
-// }
+.graphs-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.grant-rates-graph img {
+    height: 40vh;
+}
+
+.graph-text {
+    text-align: center;
+    font-family: 'acumin';
+    font-size: 1.4rem;
+}
+
+.graphs-buttons {
+    display: flex;
+    justify-content: center;
+}
 
 .view-more-data-btn-container {
     height: 44px;
     width: 180px;
-    margin: 0 auto;
+    margin: 0;
     text-align: center;
+    margin-top: 5%;
     margin-bottom: 10%;
 }
 
@@ -75,16 +93,45 @@
     font-size: 1.4rem;
 }
 
-// .bottom-section {
-//      ADD THIS BACK IN WHEN YOU HAVE A BOTTOM SECTION
-// }
+.bottom-section-title {
+    text-align: center;
+    font-family: 'acumin';
+    font-size: 3rem;
+    margin: 10% 0;
+}
+
+.bottom-section {
+    display: flex;
+    font-family: 'acumin';
+    font-size: 1.2rem;
+    justify-content: space-around;
+}
+
+.systemic-disparity-item {
+    width: 25%;
+    text-align: center;
+}
+
+.systemic-disparity-rate {
+    font-size: 3rem;
+}
+
+.read-more-data-btn-container {
+    height: 44px;
+    width: 180px;
+    margin: auto;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
 
 .back-to-top {
-    width: 8%;
+    text-align: center;
     font-size: 1.2rem;
     cursor: pointer;
     color: black;
     margin: 5% auto;
+    width: 35%;
 }
 
 .ant-space-align-center {
@@ -100,7 +147,7 @@
 
 @media @mobile-small {
     .header {
-        height: 30vh;
+        height: auto;
        display: block;
        position: relative;
     }
@@ -120,7 +167,7 @@
    
     .header-text-container h1 {
         font-size: 1.5rem;
-        padding-top: 5%;
+        padding-top: 1%;
     }
 
     .header-text-container h3 {
@@ -204,7 +251,7 @@
     }
 
     .back-to-top {
-        width: 35%;
+        width:35%;
     }
 
 
@@ -212,7 +259,7 @@
 
 @media @mobile-medium {
     .header {
-        height: 20vh;
+        height: auto;
        display: block;
        position: relative;
     }
@@ -232,7 +279,7 @@
    
     .header-text-container h1 {
         font-size: 1.5rem;
-        padding-top: 5%;
+        padding-top: 1%;
     }
 
     .header-text-container h3 {
@@ -327,7 +374,7 @@
 
 @media @mobile-large {
     .header {
-        height: 20vh;
+        height: auto;
        display: block;
        position: relative;
     }
@@ -346,7 +393,7 @@
    
     .header-text-container h1 {
         font-size: 1.5rem;
-        padding-top: 5%;
+        padding-top: 1%;
     }
 
     .header-text-container h3 {
@@ -441,7 +488,7 @@
 
 @media @tablet-small {
     .header {
-        height: 30vh;
+        height: auto;
        display: block;
        position: relative;
     }
@@ -461,7 +508,7 @@
    
     .header-text-container h1 {
         font-size: 2.5rem;
-        padding-top: 5%;
+        padding-top: 1%;
     }
 
     .header-text-container h3 {
@@ -555,7 +602,7 @@
 
 @media @tablet-large {
     .header {
-        height: 30vh;
+        height: auto;
        display: block;
        position: relative;
     }
@@ -575,7 +622,7 @@
    
     .header-text-container h1 {
         font-size: 3.5rem;
-        padding-top: 5%;
+        padding-top: 1%;
     }
 
     .header-text-container h3 {
@@ -718,12 +765,12 @@
 
 @media @laptop {
     .header {
-        height: 35vh;
+        height: auto;
     }
 
     .header-text-container h1 {
         font-size: 2.8rem;
-        padding-top: 5%;
+        padding-top: 1%;
     }
 
     .header-text-container h3 {
