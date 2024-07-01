@@ -1,8 +1,5 @@
 import React from 'react';
-// ADD IMPORTS BACK FOR GRAPHS SECTION
-// import GrantRatesByOfficeImg from '../../../styles/Images/bar-graph-no-text.png';
-// import GrantRatesByNationalityImg from '../../../styles/Images/pie-chart-no-text.png';
-// import GrantRatesOverTimeImg from '../../../styles/Images/line-graph-no-text.png';
+//added imports for the graphs
 import GrantRatesByOfficeImg from "../../../styles/Images/bar-graph-no-text.png";
 import GrantRatesByNationalityImg from "../../../styles/Images/pie-chart-no-text.png";
 import GrantRatesOverTimeImg from "../../../styles/Images/line-graph-no-text.png";
@@ -10,8 +7,6 @@ import HrfPhoto from '../../../styles/Images/paper-stack.jpg';
 import '../../../styles/RenderLandingPage.less';
 import { Button } from 'antd';
 import { useHistory } from 'react-router-dom';
-// for the purposes of testing PageNav
-// import PageNav from '../../common/PageNav';
 import PageNav from "../../common/PageNav";
 
 function RenderLandingPage(props) {
@@ -35,8 +30,8 @@ function RenderLandingPage(props) {
         </div>
       </div>
 
-      {/* Graphs Section: Add code here for the graphs section for your first ticket */}
-      {/* <div className="graphs-section"> */}
+      {/* added the graphs section with the given className */}
+      {/* used graph images, added desired text, assigned classNames for easy styling, and gave graphs alts */}
       <div className="graphs-section">
         <div className="grant-rates-graph">
           <img src={GrantRatesByOfficeImg} alt="Bar Graph" className="graph-img"/>
@@ -51,6 +46,8 @@ function RenderLandingPage(props) {
           <h3 className="graph-text">Search Grant Rates Over Time</h3>
         </div>
       </div>
+      {/* made the second button */}
+      {/* made a div and classNames for the graph buttons for easy styling */}
       <div className="graphs-buttons">
         <div className="view-more-data-btn-container">
           <Button
@@ -65,14 +62,12 @@ function RenderLandingPage(props) {
           <Button
             type="default"
             style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
-            onClick={() => null} //this button does nothing for now
+            onClick={() => history.push('/graphs')}
           >
             Download the Data
           </Button>
         </div>
       </div>
-
-
       <div className="middle-section">
         <div className="hrf-img-container">
           <img src={HrfPhoto} alt="Human Rights First" className="hrf-img" />
@@ -89,6 +84,7 @@ function RenderLandingPage(props) {
           </h3>
         </div>
       </div>
+      {/* made the bottom section and organized info in divs for easy styling*/}
       <h1 className="bottom-section-title">Systemic Disparity Insights</h1>
       <div className="bottom-section">
         <div className="systemic-disparity-item">
@@ -112,18 +108,17 @@ function RenderLandingPage(props) {
           </h3>
         </div>
       </div>
+      {/* added button for the bottom section */}
       <div className="read-more-data-btn-container">
         <Button
           type="default"
           style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
-          onClick={() => history.push('/graphs')} //this button takes user to graphs for now
+          onClick={() => history.push('/graphs')}
         >
           Read More
         </Button>
       </div>
       <div>
-        {/* Bottom Section: Add code here for the graphs section for your first ticket */}
-        {/* <div className="bottom-section">*/}
         <p onClick={() => scrollToTop()} className="back-to-top">
           Back To Top ^
         </p>

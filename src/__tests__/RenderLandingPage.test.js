@@ -7,6 +7,10 @@ describe("RenderLandingPage renders properly", () => {
     beforeEach(() => {
         render(<RenderLandingPage/>);
     })
+
+    // 1, 3, and 5 ensure that the items already present weren't erased
+    // 2 and 4 ensure that the new items have correct details
+
     test("1: header renders correctly", () => {
         screen.getByText("Asylum Office Grant Rate Tracker");
         expect(screen.queryByText("The Asylum Office Grant Rate Tracker provides", {exact: false}).toBeVisible)
